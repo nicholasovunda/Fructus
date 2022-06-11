@@ -12,6 +12,10 @@
 		E10DAFE9285367D9004D614F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10DAFE8285367D9004D614F /* Assets.xcassets */; };
 		E10DAFEC285367D9004D614F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10DAFEB285367D9004D614F /* Preview Assets.xcassets */; };
 		E10DAFF528537016004D614F /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DAFF428537016004D614F /* FruitCardView.swift */; };
+		E18BADE428540BCD007F1629 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BADE328540BCD007F1629 /* StartButtonView.swift */; };
+		E18BADE628541096007F1629 /* OnboadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BADE528541096007F1629 /* OnboadingView.swift */; };
+		E18BADE9285415FF007F1629 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BADE8285415FF007F1629 /* FruitModel.swift */; };
+		E18BADEC28541771007F1629 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BADEB28541771007F1629 /* FruitData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		E10DAFE8285367D9004D614F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10DAFEB285367D9004D614F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E10DAFF428537016004D614F /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		E18BADE328540BCD007F1629 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		E18BADE528541096007F1629 /* OnboadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadingView.swift; sourceTree = "<group>"; };
+		E18BADE8285415FF007F1629 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		E18BADEB28541771007F1629 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 		E10DAFE3285367D4004D614F /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
+				E18BADEA2854174E007F1629 /* Data */,
+				E18BADE7285415E5007F1629 /* Model */,
 				E10DAFF328536EE2004D614F /* View */,
 				E10DAFF228536E79004D614F /* App */,
 				E10DAFE8285367D9004D614F /* Assets.xcassets */,
@@ -74,6 +84,7 @@
 			children = (
 				E10DAFE4285367D4004D614F /* FructusApp.swift */,
 				E10DAFE6285367D4004D614F /* ContentView.swift */,
+				E18BADE528541096007F1629 /* OnboadingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -82,8 +93,25 @@
 			isa = PBXGroup;
 			children = (
 				E10DAFF428537016004D614F /* FruitCardView.swift */,
+				E18BADE328540BCD007F1629 /* StartButtonView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E18BADE7285415E5007F1629 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E18BADE8285415FF007F1629 /* FruitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E18BADEA2854174E007F1629 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E18BADEB28541771007F1629 /* FruitData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18BADEC28541771007F1629 /* FruitData.swift in Sources */,
+				E18BADE628541096007F1629 /* OnboadingView.swift in Sources */,
 				E10DAFF528537016004D614F /* FruitCardView.swift in Sources */,
+				E18BADE428540BCD007F1629 /* StartButtonView.swift in Sources */,
 				E10DAFE7285367D4004D614F /* ContentView.swift in Sources */,
+				E18BADE9285415FF007F1629 /* FruitModel.swift in Sources */,
 				E10DAFE5285367D4004D614F /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
