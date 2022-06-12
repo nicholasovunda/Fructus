@@ -9,24 +9,28 @@ import SwiftUI
 
 struct OnboadingView: View {
     
-    //MARK: -PROPERTIES
     
+    //MARK: -PROPERTIES
+//
+    
+    
+    let fruits: [Fruit] = fruitsData
     //MARK: - BODY
     var body: some View {
         TabView {
-            ForEach(0..<5){
+            ForEach(fruits[0...5]){
                 item in
-//                FruitCardView()
-                Text("Cards")
+                FruitCardView(fruit: item)
             }
         } //:TAB
         .tabViewStyle(PageTabViewStyle())
-        .padding(.vertical, 20 )
+        .padding(.vertical, 2)
     }
 }
 //MARK: - PREVIEW
 struct OnboadingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboadingView()
+            .previewDevice("iPhone 13 Pro Max")
     }
 }
