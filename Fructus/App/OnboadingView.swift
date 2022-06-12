@@ -8,13 +8,8 @@
 import SwiftUI
 
 struct OnboadingView: View {
-    
-    
     //MARK: -PROPERTIES
-//
-    
-    
-    let fruits: [Fruit] = fruitsData
+    var fruits: [Fruit] = fruitsData
     //MARK: - BODY
     var body: some View {
         TabView {
@@ -30,7 +25,7 @@ struct OnboadingView: View {
 //MARK: - PREVIEW
 struct OnboadingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboadingView()
+        OnboadingView(fruits: fruitsData)
             .previewDevice("iPhone 13 Pro Max")
     }
 }
